@@ -1,0 +1,3 @@
+-- Mostrar todos los clientes en la tabla "Cliente".
+  
+SELECT * FROM ClientePLSQL;

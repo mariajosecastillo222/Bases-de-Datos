@@ -1,4 +1,3 @@
--- Mostrar todas las columnas de la tabla Auto 
-
+-- Mostrar todas los autos de la tabla Auto 
 
 SELECT * FROM AutoPLSQL;

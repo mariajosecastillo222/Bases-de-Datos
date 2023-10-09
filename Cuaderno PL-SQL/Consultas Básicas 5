@@ -1,0 +1,3 @@
+-- Mostrar todas las reservas en la tabla "Reserva".
+
+SELECT * FROM ReservaPLSQL;

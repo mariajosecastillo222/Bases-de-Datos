@@ -1,0 +1,3 @@
+-- Mostrar todos los alquileres en la tabla "Alquiler".
+
+SELECT * FROM AlquilerPLSQL; 

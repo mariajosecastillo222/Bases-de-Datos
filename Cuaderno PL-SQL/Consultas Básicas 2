@@ -1,3 +1,3 @@
--- Mostrar todas los autos de la tabla Auto 
+-- Mostrar todos los autos en la tabla "Auto".
 
 SELECT * FROM AutoPLSQL;

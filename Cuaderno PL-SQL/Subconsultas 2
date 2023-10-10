@@ -1,0 +1,3 @@
+-- Mostrar los autos que no han sido alquilados aún.
+
+SELECT a.id_auto, a.marca, a.modelo FROM AutoPLSQL a LEFT JOIN AlquilerPLSQL al ON a.id_auto = al.id_auto WHERE al.id_auto IS NULL;

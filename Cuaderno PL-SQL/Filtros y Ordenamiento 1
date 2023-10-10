@@ -1,0 +1,3 @@
+-- Mostrar los clientes que se llaman "Juan". 
+
+SELECT * FROM ClientePLSQL WHERE NOMBRE = 'Juan';

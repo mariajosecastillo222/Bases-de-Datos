@@ -1,0 +1,3 @@
+-- Mostrar los autos de marca "Toyota".
+
+SELECT * FROM AutoPLSQL WHERE MARCA = 'Toyota';

@@ -1,0 +1,3 @@
+-- Mostrar las reservas realizadas por un cliente específico.
+
+SELECT sa.* FROM ClientePLSQL s INNER JOIN ReservaPLSQL sa ON s.id_cliente = sa.id_cliente WHERE s.id_cliente = '33';

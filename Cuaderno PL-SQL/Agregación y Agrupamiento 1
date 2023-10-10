@@ -1,0 +1,3 @@
+-- Contar cuántos autos hay de cada marca en la tabla "Auto".
+
+SELECT marca, COUNT(*) as cantidad FROM AutoPLSQL GROUP BY marca;

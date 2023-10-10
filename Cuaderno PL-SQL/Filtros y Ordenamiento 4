@@ -1,0 +1,3 @@
+-- Mostrar las sucursales ubicadas en "Madrid".
+
+SELECT * FROM SucursalPLSQL WHERE CIUDAD = 'Madrid';

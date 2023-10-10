@@ -1,0 +1,3 @@
+-- Mostrar los detalles de las reservas con los nombres de los clientes y las ciudades de las sucursales.
+
+SELECT c.nombre, s.ciudad, r.* FROM ClientePLSQL c INNER JOIN ReservaPLSQL r ON c.id_cliente = r.id_cliente INNER JOIN SucursalPLSQL s ON r.id_sucursal = s.id_sucursal;

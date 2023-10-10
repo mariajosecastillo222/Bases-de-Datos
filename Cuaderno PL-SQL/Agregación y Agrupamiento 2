@@ -1,0 +1,3 @@
+-- Calcular la duración promedio de los alquileres.
+
+SELECT id_alquiler, AVG(fecha_fin - fecha_inicio) as duracion_promedio FROM AlquilerPLSQL GROUP BY id_alquiler;

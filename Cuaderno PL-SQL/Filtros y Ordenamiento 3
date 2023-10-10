@@ -1,0 +1,3 @@
+-- Mostrar los alquileres que ocurrieron después de una fecha específica.
+
+SELECT * FROM AlquilerPLSQL WHERE fecha_inicio > TO_DATE('2023-05-23', 'YYYY-MM-DD');

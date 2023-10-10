@@ -1,0 +1,3 @@
+-- Mostrar el número total de reservas realizadas en cada sucursal.
+
+SELECT r.id_sucursal, COUNT(*) as total_reservas FROM ReservaPLSQL r GROUP BY r.id_sucursal;

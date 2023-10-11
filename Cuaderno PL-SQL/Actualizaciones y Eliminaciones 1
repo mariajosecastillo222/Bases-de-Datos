@@ -1,0 +1,3 @@
+-- Actualizar la dirección de un cliente específico.
+
+UPDATE ClientePLSQL SET direccion = '9408 Alvarado Ramp, Grossbury, Kentucky 37569' WHERE id_cliente = '629';

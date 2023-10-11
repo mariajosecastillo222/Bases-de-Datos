@@ -1,0 +1,3 @@
+-- Eliminar un auto de la tabla "Auto".
+
+DELETE FROM AutoPLSQL WHERE id_auto = '849';

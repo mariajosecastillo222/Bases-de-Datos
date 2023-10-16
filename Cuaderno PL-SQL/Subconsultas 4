@@ -1,1 +1,3 @@
 -- Mostrar los clientes que han realizado alquileres en la misma ciudad en la que viven.
+
+SELECT C.nombre AS nombre_cliente FROM ClientePLSQL C JOIN AlquilerPLSQL A ON C.id_cliente = A.id_cliente JOIN ReservaPLSQL R ON A.id_reserva = R.id_reserva JOIN SucursalPLSQL S ON R.id_sucursal = S.id_sucursal WHERE C.direccion = S.ciudad;

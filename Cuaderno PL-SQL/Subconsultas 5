@@ -1,2 +1,8 @@
 -- Encontrar los autos que han sido alquilados en la misma sucursal donde se realizó una reserva.
 
+SELECT DISTINCT au.id_auto, au.marca, au.ano, su.id_sucursal
+FROM AutoPLSQL au
+INNER JOIN AlquilerPLSQL al ON au.id_auto = al.id_auto
+INNER JOIN ReservaPLSQL r ON al.id_reserva = r.id_reserva AND al.id_cliente = r.id_cliente
+INNER JOIN SucursalPLSQL su ON r.id_sucursal = su.id_sucursal
+WHERE su.id_sucursal = 623;

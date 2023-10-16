@@ -1,2 +1,15 @@
 -- Encontrar el cliente que ha realizado la mayor cantidad de alquileres.
 
+SELECT c.id_cliente, nombre, COUNT(al.id_alquiler) AS cantidad_alquileres
+FROM ClientePLSQL c
+INNER JOIN AlquilerPLSQL al ON al.id_cliente = c.id_cliente
+GROUP BY c.id_cliente, nombre
+HAVING COUNT(al.id_alquiler) = (
+    SELECT MAX(cantidad_alquileres)
+    FROM (
+        SELECT COUNT(id_alquiler) AS cantidad_alquileres
+        FROM ClientePLSQL
+        INNER JOIN AlquilerPLSQL ON AlquilerPLSQL.id_cliente = ClientePLSQL.id_cliente
+        GROUP BY ClientePLSQL.id_cliente
+    ) subquery
+);

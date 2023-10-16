@@ -1,2 +1,5 @@
 -- Encontrar los clientes que han alquilado el mismo auto más de una vez.
 
+SELECT c.id_cliente, c.nombre, al.id_auto
+FROM ClientePLSQL c
+INNER JOIN AlquilerPLSQL al ON c.id_cliente = al.id_cliente AND al.id_auto = 4;

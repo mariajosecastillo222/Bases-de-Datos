@@ -1,3 +1,9 @@
 -- Mostrar los clientes que han realizado al menos una reserva.
 
-SELECT c.id_cliente, c.nombre FROM ClientePLSQL c INNER JOIN ReservaPLSQL r ON c.id_cliente = r.id_cliente;
+SELECT c.id_cliente, c.nombre
+FROM ClientePLSQL c
+WHERE EXISTS (
+    SELECT 1
+    FROM ReservaPLSQL r
+    WHERE c.id_cliente = r.id_cliente
+);
